@@ -1,13 +1,7 @@
 {
-<<<<<<< HEAD
-  "name": "todo-app",
-  "version": "0.0.0",
-  "description": "Small description for todo-app goes here",
-=======
   "name": "my-first-app",
   "version": "0.0.0",
   "description": "Small description for my-first-app goes here",
->>>>>>> 39b9c613e3f3e85f887444b55461d6cf957351bd
   "private": true,
   "directories": {
     "doc": "doc",
@@ -40,12 +34,11 @@
     "ember-cli-sri": "^2.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.5.0",
-<<<<<<< HEAD
+    "ember-data-filter": "1.13.0",
     "ember-data-fixture-adapter": "1.13.0",
-=======
->>>>>>> 39b9c613e3f3e85f887444b55461d6cf957351bd
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.5.1",
+    "ember-localstorage-adapter": "1.0.0-rc.1",
     "ember-resolver": "^2.0.3",
     "loader.js": "^4.0.1"
   }

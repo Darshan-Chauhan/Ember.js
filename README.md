@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 # Todo-app
-=======
 # My-first-app
->>>>>>> 39b9c613e3f3e85f887444b55461d6cf957351bd
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.

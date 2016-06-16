@@ -2,20 +2,20 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   actions: {
-    editTodo: function(){
-      this.set('isEditing', true);
+    editTodo(todo) {
+      todo.set('isEditing', true);
     },
-    acceptChanges: function(){
-      this.set('isEditing', false);
-      if (Ember.isEmpty(this.get('model.title'))){
-        this.send('removeTodo');
+    acceptChanges(todo) {
+      this.set('is_editing', false);
+      var model = this.get('model');
+      if (Ember.isEmpty(todo)) {
+        return false;
       } else {
-        this.get('model').save();
+        model.save();
       }
     },
-    removeTodo: function() {
-      var todo = this.get("model");
-      todo.deleteRecord();
+    removeTodo(todo) {
+      todo.destroyRecord();
       todo.save();
     }
   },
