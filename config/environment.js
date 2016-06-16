@@ -2,7 +2,11 @@
 
 module.exports = function(environment) {
   var ENV = {
+<<<<<<< HEAD
     modulePrefix: 'todo-app',
+=======
+    modulePrefix: 'my-first-app',
+>>>>>>> 39b9c613e3f3e85f887444b55461d6cf957351bd
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

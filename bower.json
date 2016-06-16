@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "todo-app",
+=======
+  "name": "my-first-app",
+>>>>>>> 39b9c613e3f3e85f887444b55461d6cf957351bd
   "dependencies": {
     "ember": "~2.5.0",
     "ember-cli-shims": "0.1.1",
