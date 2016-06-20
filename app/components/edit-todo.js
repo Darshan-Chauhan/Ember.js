@@ -1,15 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  store: Ember.inject.service(),
-  didInsertElement: function(){
+
+  didInsertElement(){
     this.$().focus();
   },
+
   actions: {
-    acceptChanges(todo) {
-        this.set('is_editing', false);
+    acceptChanges(content) {
         var model = this.get('todo');
-        if (Ember.isEmpty(todo)) {
+        model.set('isEditing', false);
+        if (Ember.isEmpty(content)) {
           return false;
         } else {
           model.save();
