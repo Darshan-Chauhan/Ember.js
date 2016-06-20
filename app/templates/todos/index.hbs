@@ -2,7 +2,7 @@
   {{#each model as |todo|}}
     <li class="{{if todo.isCompleted 'completed'}}{{if todo.isEditing 'editing'}}">
       {{#if todo.isEditing}}
-        {{edit-todo class="edit" value=todo.title focus-out="acceptChanges" insert-newline="acceptChanges"}}
+        {{edit-todo todo=todo}}
       {{else}}
         {{input type="checkbox" class="toggle" checked=todo.isCompleted}}
         <label{{action "editTodo" todo on="doubleClick"}}>{{todo.title}}</label>

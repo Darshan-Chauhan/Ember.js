@@ -5,18 +5,8 @@ export default Ember.Controller.extend({
     editTodo(todo) {
       todo.set('isEditing', true);
     },
-    acceptChanges(todo) {
-      this.set('is_editing', false);
-      var model = this.get('model');
-      if (Ember.isEmpty(todo)) {
-        return false;
-      } else {
-        model.save();
-      }
-    },
     removeTodo(todo) {
       todo.destroyRecord();
-      todo.save();
     }
   },
   isEditing: false,
