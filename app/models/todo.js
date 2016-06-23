@@ -4,7 +4,8 @@ import attr from 'ember-data/attr';
 
 var Todo = Model.extend({
   title: attr('string'),
-  isCompleted: attr('boolean')
+  isCompleted: attr('boolean'),
+  createdAt: attr('date')
 });
 
 Todo.reopenClass({
@@ -12,17 +13,20 @@ Todo.reopenClass({
     {
       id: 1,
       title: 'Learn Ember.js',
-      isCompleted: true
+      isCompleted: true,
+      createdAt: Date.now()
     },
     {
       id: 2,
       title: 'Darshan',
-      isCompleted: false
+      isCompleted: false,
+      createdAt: Date.now()
     },
     {
       id: 3,
       title: 'Profit!',
-      isCompleted: false
+      isCompleted: false,
+      createdAt: Date.now()
     }
   ]
 });

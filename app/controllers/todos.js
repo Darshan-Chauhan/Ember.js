@@ -9,12 +9,18 @@ export default Ember.Controller.extend({
 
       var todo = this.store.createRecord('todo', {
         title:title,
-        isCompleted:false
+        isCompleted:false,
+        createdAt: new Date()
       });
 
       //clear out text field
       this.set('newTitle','');
       todo.save();
+    },
+
+    destroyAll(model) {
+      model.invoke('deleteRecord');
+      model.invoke('save');
     },
 
     clearCompleted() {

@@ -16,6 +16,9 @@
     </span>
     <ul id="filters">
       <li>
+        <button {{action "destroyAll" model}} class="destroy" >DeleteAll</button>
+      </li>
+      <li>
         {{#link-to "todos.index" activeClass="selected"}}All{{/link-to}}
       </li>
       <li>
